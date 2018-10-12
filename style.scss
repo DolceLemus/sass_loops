@@ -1,0 +1,11 @@
+$list: (orange, purple, red);
+
+
+//the class needs to have the same value 
+//that the color, for example class="red" -->
+// $list: (red);
+@each $item in $list {
+    .#{$item}{
+        background: $item;
+    }
+}
